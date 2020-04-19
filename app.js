@@ -61,22 +61,8 @@ d3.json("samples.json").then((data) => {
     };
     Plotly.newPlot("bar",trace1, barlayout)
 
-    // var trace2=[{
-    //     x:ids,
-    //     y:values,
-    //     text:labels,
-    //     mode:"marker",
-    //     marker:{
-    //         color:ids,
-    //         size:values
-    //     },
-    //     // type:"scatter"
-    // }]
-    // var bubblelayout={
-    //     title:"Bubble Chart"
-    // };
     trace2 = {
-        //x:[response.map(data => data.otu_ids)].slice(0,9),
+       
         x:ids,
         y:values,
         mode : 'markers',
@@ -113,6 +99,4 @@ function optionChanged(Sample) {
     charttable(Sample);
 };
 
-
-  
 init();
